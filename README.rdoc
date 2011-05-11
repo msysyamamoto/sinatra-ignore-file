@@ -1,6 +1,6 @@
 = sinatra-ignore-file
 
-Description goes here.
+Ignores the presence of static files.
 
 == Contributing to sinatra-ignore-file
  
