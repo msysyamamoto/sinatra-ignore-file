@@ -8,8 +8,12 @@ source "http://rubygems.org"
 group :development do
   #gem "rspec", "~> 2.3.0"
   gem "rspec", ">= 2.3.0"
-  gem "yard", "~> 0.6.0"
-  gem "bundler", "~> 1.0.0"
-  gem "jeweler", "~> 1.6.0"
-  gem "rcov", ">= 0"
+  gem "yard", "~> 0.9.11"
+  gem "bundler", "~> 1.16.0"
+  gem "jeweler", ">= 0"
+  if RUBY_VERSION > '1.9' then
+    gem 'simplecov', '>= 0'
+  else
+    gem "rcov", ">= 0"
+  end
 end
